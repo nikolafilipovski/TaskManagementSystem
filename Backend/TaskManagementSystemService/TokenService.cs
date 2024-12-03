@@ -24,7 +24,7 @@ public class TokenService : ITokenService
             issuer: _issuer,
             audience: _audience,
             claims: claims,
-            expires: DateTime.Now.AddMinutes(15), // The token will expire in 15 minutes
+            expires: DateTime.Now.AddMinutes(30), // The token will expire in 30 minutes
             signingCredentials: creds
         );
 
